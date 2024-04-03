@@ -22,7 +22,7 @@ const Navbar = () => {
         }`}
       >
         <button
-          className="px-1.5 py-1 text-sm dark:text-[#f87171] dark:bg-[#f871711a] text-[#f05b5b] bg-[#f85e5e38] rounded-md w-fit mb-4"
+          className="px-2 py-1.5 text-xs dark:text-[#f87171] dark:bg-[#f871711a] text-[#f05b5b] bg-[#f85e5e38] rounded-md w-fit mb-4"
           onClick={hideSidebar}
         >
           Close
