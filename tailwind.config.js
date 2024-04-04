@@ -6,6 +6,7 @@ export default {
     extend: {
       fontFamily: {
         wendy: "Wendy One, sans-serif",
+        abeezee: "ABeeZee, sans-serif",
       },
       colors: {
         dark: "#0E0E0E",
@@ -15,6 +16,16 @@ export default {
         dark: "#0E0E0E",
         light: "#ECF4D6",
         darkglass: "#1e1e1ef0",
+      },
+      lineHeight: {
+        12: "3rem",
+      },
+      backgroundImage: {
+        "hero-pattern-dark": "url('./src/assets/mobile/bg-pattern-1-dark.png')",
+      },
+      borderWidth: {
+        1.5: "1.5px",
+        3: "3px",
       },
     },
   },
