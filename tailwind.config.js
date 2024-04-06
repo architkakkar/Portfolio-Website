@@ -27,6 +27,9 @@ export default {
         1.5: "1.5px",
         3: "3px",
       },
+      padding: {
+        1.25: "5px",
+      },
     },
   },
   plugins: [],

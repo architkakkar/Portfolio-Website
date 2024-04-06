@@ -9,8 +9,8 @@ const SocialLinks = (props) => {
     >
       <FontAwesomeIcon
         icon={props.iconName}
-        fontSize={"18px"}
-        className="border-1.5 dark:border-light border-dark rounded-lg p-1.5"
+        fontSize={"20px"}
+        className="border-1.5 dark:border-light border-dark rounded-lg p-1.25"
       />
     </a>
   );

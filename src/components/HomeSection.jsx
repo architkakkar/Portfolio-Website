@@ -18,7 +18,7 @@ const HomeSection = () => {
           fugit eum ad.
         </p>
       </div>
-      <button className="dark:bg-light bg-dark mt-6 py-2 px-6 rounded-lg tracking-wide">
+      <button className="dark:bg-light bg-dark mt-6 py-2 px-5 rounded-lg tracking-wide">
         <a
           href="https://google.com"
           target="_blank"
