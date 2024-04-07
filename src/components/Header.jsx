@@ -2,10 +2,14 @@ import React from "react";
 import DarkModeToggle from "./DarkModeToggle";
 import Navbar from "./Navbar";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <header className="flex items-center justify-between">
-      <Navbar />
+      <Navbar
+        isSidebar={props.isSidebar}
+        show={props.showSidebar}
+        hide={props.hideSidebar}
+      />
       <DarkModeToggle />
     </header>
   );
