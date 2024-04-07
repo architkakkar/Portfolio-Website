@@ -17,21 +17,31 @@ const Navbar = (props) => {
           Close
         </button>
         <a
-          href="#home"
+          href="#"
           className="text-violet-700 hover:underline hover:underline-offset-4"
+          // onClick={props.setPage("home")}
         >
           01. Home
         </a>
-        <a href="#about" className="hover:underline hover:underline-offset-4">
+        <a
+          href="#about"
+          className="hover:underline hover:underline-offset-4"
+          // onClick={props.setPage("about")}
+        >
           02. About
         </a>
         <a
           href="#projects"
           className="hover:underline hover:underline-offset-4"
+          // onClick={props.setPage("project")}
         >
           03. Projects
         </a>
-        <a href="#contact" className="hover:underline hover:underline-offset-4">
+        <a
+          href="#contact"
+          className="hover:underline hover:underline-offset-4"
+          // onClick={props.setPage("contact")}
+        >
           04. Contact
         </a>
       </nav>

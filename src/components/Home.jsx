@@ -1,6 +1,6 @@
 import React from "react";
 
-const HomeSection = () => {
+const Homepage = () => {
   return (
     <main className="my-10">
       <h1 className="text-6xl uppercase leading-12">Archit Kakkar</h1>
@@ -34,4 +34,4 @@ const HomeSection = () => {
   );
 };
 
-export default HomeSection;
+export default Homepage;

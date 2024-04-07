@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
-import HomeSection from "./components/HomeSection";
+import Home from "./components/Home";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function App() {
   const [isSidebar, setIsSidebar] = useState(false);
+  const [page, setPage] = useState("about");
 
   function showSidebar() {
     setIsSidebar(true);
@@ -23,6 +27,7 @@ function App() {
         isSidebar={isSidebar}
         showSidebar={showSidebar}
         hideSidebar={hideSidebar}
+        // setPage={setPage}
       />
       {isSidebar && (
         <div
@@ -30,7 +35,10 @@ function App() {
           onClick={hideSidebar}
         ></div>
       )}
-      <HomeSection />
+      {page === "home" && <Home />}
+      {page === "about" && <About />}
+      {page === "project" && <Projects />}
+      {page === "contact" && <Contact />}
       <Footer />
     </div>
   );
