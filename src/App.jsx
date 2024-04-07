@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 
 function App() {
   const [isSidebar, setIsSidebar] = useState(false);
-  const [page, setPage] = useState("about");
+  const [page, setPage] = useState("projects");
 
   function showSidebar() {
     setIsSidebar(true);
@@ -37,7 +37,7 @@ function App() {
       )}
       {page === "home" && <Home />}
       {page === "about" && <About />}
-      {page === "project" && <Projects />}
+      {page === "projects" && <Projects />}
       {page === "contact" && <Contact />}
       <Footer />
     </div>
