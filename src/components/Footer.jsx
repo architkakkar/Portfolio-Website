@@ -52,14 +52,12 @@ const Footer = () => {
     <footer>
       <ul className="flex gap-x-2.5 items-center justify-center">
         {socialMediaLinks.map((link) => (
-          <li>
-            <SocialLinks
-              key={link.id}
-              name={link.name}
-              iconName={link.iconName}
-              address={link.address}
-            />
-          </li>
+          <SocialLinks
+            key={link.id}
+            name={link.name}
+            iconName={link.iconName}
+            address={link.address}
+          />
         ))}
       </ul>
       <div className="text-xs font-abeezee flex flex-col items-center mt-1 font-bold dark:font-medium">

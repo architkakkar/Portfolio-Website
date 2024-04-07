@@ -15,7 +15,10 @@ const HomeSection = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quisquam
           veniam non facilis! Harum, animi. Nesciunt minus deserunt dolorum
           commodi. Illo pariatur delectus commodi officiis fuga perferendis
-          fugit eum ad.
+          fugit eum ad. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Nemo exercitationem nulla, optio mollitia iure laboriosam doloremque
+          vitae animi a sint quibusdam natus excepturi distinctio quas tenetur,
+          porro cumque rem deleniti?
         </p>
       </div>
       <button className="dark:bg-light bg-dark mt-6 py-2 px-5 rounded-lg tracking-wide">

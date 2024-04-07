@@ -35,7 +35,7 @@ const DarkModeToggle = () => {
           fontSize="25px"
         />
       </button>
-      <span className="opacity-75 dark:opacity-100">dark</span>
+      <span className="opacity-70 dark:opacity-100">dark</span>
     </div>
   );
 };
