@@ -23,10 +23,26 @@ const Projects = () => {
         { name: "Firebase", image: FirebaseLogo },
       ],
     },
+    {
+      title: "Markdown Notes - App",
+      image: "",
+      links: {
+        repo: "https://github.com/architkakkar/MarkdownNotes-App",
+        website: "https://architkakkar-markdownnotes-app.netlify.app/",
+      },
+      summary:
+        "The Markdown Notes App is a modern, user-friendly application designed for creating and managing markdown notes. Built with React, it leverages the power of Vite for a fast and efficient development experience, and Firebase for seamless database services.",
+      technology: [
+        { name: "ReactJS", image: ReactLogo },
+        { name: "CSS3", image: CSSLogo },
+        { name: "Vite", image: ViteLogo },
+        { name: "Firebase", image: FirebaseLogo },
+      ],
+    },
   ];
 
   return (
-    <main className="my-10 flex flex-wrap gap-8">
+    <main className="flex flex-wrap gap-6 my-10">
       {projects.map((project, index) => (
         <ProjectCard
           key={index}

@@ -13,7 +13,7 @@ const ProjectCard = (props) => {
         className="w-full h-32 rounded-2xl dark:bg-darkglass bg-[#cccccc95]"
       />
       <div className="p-4">
-        <div className="flex justify-between items-center text-xl">
+        <div className="flex items-center justify-between text-xl">
           <h2 className="text-violet-700 dark:text-violet-600">
             {props.title}
           </h2>
@@ -26,7 +26,7 @@ const ProjectCard = (props) => {
             </a>
           </div>
         </div>
-        <p className="font-abeezee text-sm pt-3 pb-5 ">{props.summary}</p>
+        <p className="pt-3 pb-5 text-sm font-abeezee">{props.summary}</p>
         <div className="flex flex-wrap gap-2">
           {props.techUsed.map((tech, index) => (
             <SkillTag key={index} image={tech.image} name={tech.name} />
