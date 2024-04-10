@@ -1,12 +1,12 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import ReactLogo from "../assets/technology/react.svg";
-import CSSLogo from "../assets/technology/css3.svg";
-import ViteLogo from "../assets/technology/vite.svg";
-import FirebaseLogo from "../assets/technology/firebase.svg";
+import { ReactComponent as ReactLogo } from "../assets/technology/react.svg";
+import { ReactComponent as CSSLogo } from "../assets/technology/css3.svg";
+import { ReactComponent as ViteLogo } from "../assets/technology/vite.svg";
+import { ReactComponent as FirebaseLogo } from "../assets/technology/firebase.svg";
 
 const Projects = () => {
-  const projects = [
+  const projectData = [
     {
       title: "Markdown Notes - App",
       image: "",
@@ -43,7 +43,8 @@ const Projects = () => {
 
   return (
     <main className="flex flex-wrap gap-6 my-10">
-      {projects.map((project, index) => (
+      <ReactLogo />
+      {projectData.map((project, index) => (
         <ProjectCard
           key={index}
           image={project.image}

@@ -26,7 +26,7 @@ const ProjectCard = (props) => {
             </a>
           </div>
         </div>
-        <p className="pt-3 pb-5 text-sm font-abeezee">{props.summary}</p>
+        <p className="pt-3 pb-5 text-sm font-semibold dark:font-normal font-abeezee">{props.summary}</p>
         <div className="flex flex-wrap gap-2">
           {props.techUsed.map((tech, index) => (
             <SkillTag key={index} image={tech.image} name={tech.name} />
