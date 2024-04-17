@@ -2,11 +2,13 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import MarkdownProjectImage from "../assets/markdown-notes-project.png";
 import MemeProjectImage from "../assets/meme-generator-project.png";
-import ReactLogo from "../assets/technology/react.svg";
-import CSSLogo from "../assets/technology/css3.svg";
-import ViteLogo from "../assets/technology/vite.svg";
-import FirebaseLogo from "../assets/technology/firebase.svg";
-import TailwindCSS from "../assets/technology/tailwindcss.svg";
+import {
+  ReactSvg,
+  CSS3Svg,
+  ViteSvg,
+  FirebaseSvg,
+  TailwindCSSSvg,
+} from "./SvgLogos";
 
 const Projects = () => {
   const projectData = [
@@ -20,10 +22,10 @@ const Projects = () => {
       summary:
         "The Markdown Notes App is a modern, user-friendly application designed for creating and managing markdown notes. Built with React, it leverages the power of Vite for a fast and efficient development experience, and Firebase for seamless database services.",
       technology: [
-        { name: "ReactJS", image: ReactLogo },
-        { name: "CSS3", image: CSSLogo },
-        { name: "Vite", image: ViteLogo },
-        { name: "Firebase", image: FirebaseLogo },
+        { name: "ReactJS", SvgComponent: ReactSvg },
+        { name: "CSS3", SvgComponent: CSS3Svg },
+        { name: "Vite", SvgComponent: ViteSvg },
+        { name: "Firebase", SvgComponent: FirebaseSvg },
       ],
     },
     {
@@ -36,9 +38,9 @@ const Projects = () => {
       summary:
         "This project is a fun and interactive meme generator, built using ReactJS and TailwindCSS. It was crafted as part of a React course from Scrimba, aiming to demonstrate the capabilities of these technologies in creating dynamic and visually appealing web applications.",
       technology: [
-        { name: "ReactJS", image: ReactLogo },
-        { name: "TailwindCSS", image: TailwindCSS },
-        { name: "Vite", image: ViteLogo },
+        { name: "ReactJS", SvgComponent: ReactSvg },
+        { name: "TailwindCSS", SvgComponent: TailwindCSSSvg },
+        { name: "Vite", SvgComponent: ViteSvg },
       ],
     },
   ];

@@ -8,9 +8,9 @@ const ProjectCard = (props) => {
   return (
     <section className="rounded-2xl border-dark dark:border-light border-3">
       <img
-        src=""
+        src={props.image}
         alt="project-image"
-        className="w-full h-32 rounded-2xl dark:bg-darkglass bg-[#cccccc95]"
+        className="object-fill w-full h-40 shadow-md rounded-xl"
       />
       <div className="p-4">
         <div className="flex items-center justify-between text-xl">
@@ -26,13 +26,17 @@ const ProjectCard = (props) => {
             </a>
           </div>
         </div>
-        <p className="pt-3 pb-5 text-sm font-semibold dark:font-normal font-abeezee">{props.summary}</p>
+        <p className="pt-3 pb-5 text-sm font-semibold dark:font-normal font-abeezee">
+          {props.summary}
+        </p>
         <div className="flex flex-wrap gap-2">
           {props.techUsed.map((tech, index) => (
-            <SkillTag key={index} image={tech.image} name={tech.name} />
+            <SkillTag
+              key={index}
+              SvgComponent={tech.SvgComponent}
+              name={tech.name}
+            />
           ))}
-          {/* <SkillTag key={1} image={ReactLogo} name="React.js" /> */}
-          {/* <SkillTag key={1} image={ReactLogo} name="React.js" /> */}
         </div>
       </div>
     </section>
