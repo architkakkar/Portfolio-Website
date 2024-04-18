@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import DarkModeContext from "./DarkModeContext";
+import DarkModeContext from "../context/DarkModeContext";
 
 const ReactSvg = (props) => {
   const { isDarkMode, setIsDarkMode } = useContext(DarkModeContext);

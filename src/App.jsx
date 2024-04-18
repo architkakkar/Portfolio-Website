@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import DarkModeContext from "./components/DarkModeContext";
+import DarkModeContext from "./context/DarkModeContext";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import About from "./components/About";

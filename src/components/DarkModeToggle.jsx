@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faToggleOn, faToggleOff } from "@fortawesome/free-solid-svg-icons";
-import DarkModeContext from "./DarkModeContext";
+import DarkModeContext from "../context/DarkModeContext";
 
 const DarkModeToggle = () => {
   const { isDarkMode, setIsDarkMode } = useContext(DarkModeContext);
