@@ -1,5 +1,5 @@
 import React from "react";
-import SkillTag from "./SkillTag";
+import ProjectTechnologies from "./ProjectTechnologies";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
@@ -31,7 +31,7 @@ const ProjectCard = (props) => {
         </p>
         <div className="flex flex-wrap gap-2">
           {props.techUsed.map((tech, index) => (
-            <SkillTag
+            <ProjectTechnologies
               key={index}
               SvgComponent={tech.SvgComponent}
               name={tech.name}
