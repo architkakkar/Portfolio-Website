@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBarsStaggered } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = (props) => {
+  const location = useLocation();
+
+  useEffect(() => {
+    props.setIsSidebar(false);
+  }, [location]);
+
   return (
     <>
       <nav
@@ -16,34 +23,38 @@ const Navbar = (props) => {
         >
           Close
         </button>
-        <a
-          href="#"
-          className="text-violet-700 hover:underline hover:underline-offset-4"
-          // onClick={props.setPage("home")}
+        <Link
+          to="/"
+          className={`hover:underline hover:underline-offset-4 ${
+            location.pathname === "/" ? "text-violet-700" : ""
+          }`}
         >
           01. Home
-        </a>
-        <a
-          href="#about"
-          className="hover:underline hover:underline-offset-4"
-          // onClick={props.setPage("about")}
+        </Link>
+        <Link
+          to="/about"
+          className={`hover:underline hover:underline-offset-4 ${
+            location.pathname === "/about" ? "text-violet-700" : ""
+          }`}
         >
           02. About
-        </a>
-        <a
-          href="#projects"
-          className="hover:underline hover:underline-offset-4"
-          // onClick={props.setPage("project")}
+        </Link>
+        <Link
+          to="/projects"
+          className={`hover:underline hover:underline-offset-4 ${
+            location.pathname === "/projects" ? "text-violet-700" : ""
+          }`}
         >
           03. Projects
-        </a>
-        <a
-          href="#contact"
-          className="hover:underline hover:underline-offset-4"
-          // onClick={props.setPage("contact")}
+        </Link>
+        <Link
+          to="/contact"
+          className={`hover:underline hover:underline-offset-4 ${
+            location.pathname === "/contact" ? "text-violet-700" : ""
+          }`}
         >
           04. Contact
-        </a>
+        </Link>
       </nav>
       <div className="flex items-center justify-center">
         <FontAwesomeIcon

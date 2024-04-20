@@ -60,10 +60,10 @@ const Footer = () => {
           />
         ))}
       </ul>
-      <div className="text-xs font-abeezee flex flex-col items-center mt-1 font-bold dark:font-medium">
-        <p className="">Designed & Build by Archit Kakkar</p>
+      <div className="flex flex-col items-center mt-1 text-xs font-bold text-center font-abeezee dark:font-medium">
+        <p>Designed & Build by Archit Kakkar</p>
         <p className="hidden">|</p>
-        <p className="">Copyright @{currentYear}</p>
+        <p>Copyright @{currentYear}</p>
       </div>
     </footer>
   );

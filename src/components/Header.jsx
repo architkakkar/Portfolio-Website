@@ -7,6 +7,7 @@ const Header = (props) => {
     <header className="flex items-center justify-between">
       <Navbar
         isSidebar={props.isSidebar}
+        setIsSidebar={props.setIsSidebar}
         show={props.showSidebar}
         hide={props.hideSidebar}
         // setPage={props.setPage}
