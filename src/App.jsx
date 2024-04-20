@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 function App() {
   const [isDarkMode, setIsDarkMode] = useState();
   const [isSidebar, setIsSidebar] = useState(false);
-  const [page, setPage] = useState("contact");
+  const [page, setPage] = useState("home");
 
   // Ensure dark mode is applied on initial load if the user has it enabled in their system settings
   useEffect(() => {
