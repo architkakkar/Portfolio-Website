@@ -7,7 +7,7 @@ import {
   CSS3Svg,
   ViteSvg,
   FirebaseSvg,
-  TailwindCSSSvg,
+  TailwindCssSvg,
 } from "./SvgLogos";
 
 const Projects = () => {
@@ -39,7 +39,7 @@ const Projects = () => {
         "This project is a fun and interactive meme generator, built using ReactJS and TailwindCSS. It was crafted as part of a React course from Scrimba, aiming to demonstrate the capabilities of these technologies in creating dynamic and visually appealing web applications.",
       technology: [
         { name: "ReactJS", SvgComponent: ReactSvg },
-        { name: "TailwindCSS", SvgComponent: TailwindCSSSvg },
+        { name: "TailwindCSS", SvgComponent: TailwindCssSvg },
         { name: "Vite", SvgComponent: ViteSvg },
       ],
     },
