@@ -3,6 +3,12 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   darkMode: "class", // This enables class-based dark mode
   theme: {
+    screens: {
+      xxs: "390px",
+      xs: "500px",
+      sm: "640px",
+      md: "768px",
+    },
     extend: {
       fontFamily: {
         wendy: "Wendy One, sans-serif",
