@@ -89,7 +89,7 @@ const Aboutpage = () => {
 
   return (
     <main className="flex flex-col gap-12 px-8 py-10 my-10 border-2 rounded-2xl border-dark dark:border-light">
-      <section className="text-sm font-semibold text-center font-abeezee dark:font-normal">
+      <section className="text-sm xs:text-base font-semibold text-center font-abeezee dark:font-normal">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
         voluptate, mollitia aliquam distinctio ut dolorum quam reprehenderit,
         cum odit soluta esse neque accusantium itaque praesentium aspernatur
@@ -99,7 +99,7 @@ const Aboutpage = () => {
         tempore, nulla corrupti assumenda fuga sapiente culpa velit
         consequuntur.
       </section>
-      <section className="flex flex-wrap items-center justify-center gap-5">
+      <section className="flex flex-wrap items-center justify-center gap-5 xs:mx-14 sm:mx-20">
         {skills.map((skill, index) => (
           <SkillTag
             key={index}

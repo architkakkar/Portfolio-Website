@@ -5,12 +5,12 @@ const SkillTag = ({ name, SvgComponent }) => {
 
   return (
     <div
-      className="relative flex items-center justify-center p-1 rounded-lg bg-dark dark:bg-light"
+      className="relative flex items-center justify-center p-1 rounded-lg bg-dark dark:bg-light cursor-pointer"
       onMouseOver={() => setShowName(true)}
       onMouseLeave={() => setShowName(false)}
     >
       {showName && (
-        <span className="absolute px-1 py-0.5 text-xs font-bold text-center rounded bg-violet-600 -top-4 font-abeezee translate-x-5 translate-y-14 text-light z-10">
+        <span className="absolute px-1 py-0.5 text-xs font-bold text-center rounded bg-violet-600 -top-4 font-abeezee translate-x-6 translate-y-5 text-light z-10">
           {name}
         </span>
       )}

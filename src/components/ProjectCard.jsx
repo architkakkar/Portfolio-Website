@@ -10,23 +10,26 @@ const ProjectCard = (props) => {
       <img
         src={props.image}
         alt="project-image"
-        className="object-fill w-full h-40 shadow-md rounded-xl"
+        className="object-fill w-full h-44 shadow-md rounded-xl"
       />
-      <div className="p-4">
-        <div className="flex items-center justify-between text-xl">
+      <div className="px-4 py-5 sm:p-5">
+        <div className="flex items-center justify-between gap-x-4 text-xl sm:text-[1.375rem]">
           <h2 className="text-violet-700 dark:text-violet-600">
             {props.title}
           </h2>
-          <div className="flex items-center gap-x-3">
+          <div className="flex items-center gap-x-3 sm:gap-x-4">
             <a href={props.repo} target="_blank">
-              <FontAwesomeIcon icon={faGithub} />
+              <FontAwesomeIcon icon={faGithub} className="hover:opacity-80" />
             </a>
             <a href={props.website} target="_blank">
-              <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+              <FontAwesomeIcon
+                icon={faArrowUpRightFromSquare}
+                className="hover:opacity-80"
+              />
             </a>
           </div>
         </div>
-        <p className="pt-3 pb-5 text-sm font-semibold dark:font-normal font-abeezee">
+        <p className="pt-3 pb-5 sm:pt-4 sm:pb-6 text-sm font-semibold dark:font-normal font-abeezee">
           {props.summary}
         </p>
         <div className="flex flex-wrap gap-2">

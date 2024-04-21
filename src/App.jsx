@@ -35,7 +35,7 @@ function App() {
     <Router>
       <DarkModeContext.Provider value={{ isDarkMode, setIsDarkMode }}>
         <div
-          className={`w-screen h-full p-5 pb-4 font-wendy dark:bg-dark text-dark bg-light dark:text-light ${
+          className={`w-screen min-h-screen h-full p-5 sm:px-7 pb-4 font-wendy dark:bg-dark text-dark bg-light dark:text-light ${
             isSidebar ? "h-screen overflow-hidden" : ""
           }`}
         >

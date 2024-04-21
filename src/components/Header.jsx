@@ -10,7 +10,6 @@ const Header = (props) => {
         setIsSidebar={props.setIsSidebar}
         show={props.showSidebar}
         hide={props.hideSidebar}
-        // setPage={props.setPage}
       />
       <DarkModeToggle />
     </header>

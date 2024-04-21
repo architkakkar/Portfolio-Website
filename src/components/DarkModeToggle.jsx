@@ -12,12 +12,13 @@ const DarkModeToggle = () => {
   };
 
   return (
-    <div className="flex items-center gap-x-1.5 text-[11px]">
+    <div className="flex items-center gap-x-1.5 sm:gap-x-2 text-[11px] sm:text-xs">
       <span className="dark:opacity-50">light</span>
       <button className="flex items-center" onClick={toggleDarkMode}>
         <FontAwesomeIcon
           icon={isDarkMode ? faToggleOn : faToggleOff}
           fontSize="25px"
+          className="sm:h-7"
         />
       </button>
       <span className="opacity-70 dark:opacity-100">dark</span>

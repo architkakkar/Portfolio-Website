@@ -50,7 +50,7 @@ const Footer = () => {
 
   return (
     <footer>
-      <ul className="flex gap-x-2.5 items-center justify-center">
+      <ul className="flex gap-x-2.5 sm:gap-x-3 items-center justify-center">
         {socialMediaLinks.map((link) => (
           <SocialLinks
             key={link.id}
@@ -60,7 +60,7 @@ const Footer = () => {
           />
         ))}
       </ul>
-      <div className="flex flex-col items-center mt-1 text-xs font-bold text-center font-abeezee dark:font-medium">
+      <div className="flex flex-col items-center mt-1 sm:mt-1.5 text-xs font-bold text-center font-abeezee dark:font-medium">
         <p>Designed & Build by Archit Kakkar</p>
         <p className="hidden">|</p>
         <p>Copyright @{currentYear}</p>
