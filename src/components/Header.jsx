@@ -1,6 +1,6 @@
 import React from "react";
-import DarkModeToggle from "./DarkModeToggle";
 import Navbar from "./Navbar";
+import DarkModeToggle from "./DarkModeToggle";
 
 const Header = (props) => {
   return (

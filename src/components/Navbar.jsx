@@ -13,12 +13,14 @@ const Navbar = (props) => {
   return (
     <>
       <nav
-        className={`absolute top-0 left-0 flex flex-col w-3/5 xxs:w-1/2 xs:w-2/5 h-screen p-5 sm:px-7 transition-all duration-500 ease-in-out border-r-2 dark:border-r-light border-r-dark bg-light dark:bg-dark gap-y-5 sm:gap-y-6 text-xl rounded-r-lg ${
-          props.isSidebar ? "translate-x-0 z-10" : "-translate-x-full"
+        className={`absolute md:relative top-0 left-0 flex flex-col  md:flex-row w-3/5 xxs:w-1/2 xs:w-2/5 md:w-auto h-screen md:h-auto p-5 sm:px-7 md:p-0 transition-all duration-500 ease-in-out md:transition-none border-r-2 dark:border-r-light border-r-dark md:border-none bg-light dark:bg-dark md:bg-none gap-y-5 sm:gap-y-6 md:gap-y-0 md:gap-x-8 text-xl md:text-base rounded-r-lg md:rounded-none ${
+          props.isSidebar
+            ? "translate-x-0 z-10"
+            : "-translate-x-full md:translate-x-0"
         }`}
       >
         <button
-          className="px-2 py-1.5 sm:px-2.5 sm:py-2 text-xs dark:text-[#f87171] dark:bg-[#f871711a] text-[#ea5b5b] bg-[#f85e5e2f] rounded-md w-fit mb-4 border-1.5 border-transparent hover:border-[#ea5b5b]"
+          className="px-2 py-1.5 sm:px-2.5 sm:py-2 text-xs dark:text-[#f87171] dark:bg-[#f871711a] text-[#ea5b5b] bg-[#f85e5e2f] rounded-md w-fit mb-4 border-1.5 border-transparent hover:border-[#ea5b5b] md:hidden"
           onClick={props.hide}
         >
           Close
@@ -56,7 +58,7 @@ const Navbar = (props) => {
           04. Contact
         </Link>
       </nav>
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center md:hidden">
         <FontAwesomeIcon
           icon={faBarsStaggered}
           fontSize="26px"

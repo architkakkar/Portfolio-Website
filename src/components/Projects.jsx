@@ -46,7 +46,7 @@ const Projects = () => {
   ];
 
   return (
-    <main className="flex flex-col flex-wrap gap-6 my-10 xs:flex-nowrap xs:flex-row sm:gap-7">
+    <main className="flex flex-col flex-wrap gap-6 my-10 xs:flex-nowrap xs:flex-row sm:gap-7 md:gap-10">
       {projectData.map((project, index) => (
         <ProjectCard
           key={index}

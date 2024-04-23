@@ -88,8 +88,8 @@ const Aboutpage = () => {
   ];
 
   return (
-    <main className="flex flex-col gap-12 px-8 py-10 my-10 border-2 rounded-2xl border-dark dark:border-light">
-      <section className="text-sm xs:text-base font-semibold text-center font-abeezee dark:font-normal">
+    <main className="flex flex-col gap-12 px-8 py-10 my-10 border-2 md:my-14 rounded-2xl border-dark dark:border-light">
+      <section className="text-sm font-semibold text-center xs:text-base font-abeezee dark:font-normal">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
         voluptate, mollitia aliquam distinctio ut dolorum quam reprehenderit,
         cum odit soluta esse neque accusantium itaque praesentium aspernatur

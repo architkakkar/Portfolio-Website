@@ -2,17 +2,17 @@ import React from "react";
 
 const Homepage = () => {
   return (
-    <main className="my-10">
-      <h1 className="text-6xl xxs:text-7xl xs:text-[5.5rem] uppercase leading-12 xxs:leading-[3.5rem] xs:leading-[4rem] sm:tracking-wide">
+    <main className="my-10 md:my-14">
+      <h1 className="text-6xl xxs:text-7xl xs:text-[5.5rem] uppercase leading-12 xxs:leading-[3.5rem] xs:leading-[4rem] sm:tracking-wide md:w-3/5">
         Archit Kakkar
       </h1>
-      <h4 className="text-lg xxs:text-xl mt-2 mb-6 capitalize tracking-wide">
+      <h4 className="mt-2 mb-6 text-lg tracking-wide capitalize xxs:text-xl">
         I build things for the{" "}
-        <span className="text-violet-700 dark:text-violet-600 capitalize text-xl xxs:text-2xl">
+        <span className="text-xl capitalize text-violet-700 dark:text-violet-600 xxs:text-2xl">
           Web
         </span>
       </h4>
-      <p className="border-3 border-dark dark:border-light py-3 px-4 sm:py-4 sm:px-5 rounded-3xl font-abeezee">
+      <p className="px-4 py-3 text-sm font-bold xs:text-base dark:font-normal border-3 border-dark dark:border-light sm:py-4 sm:px-5 rounded-3xl font-abeezee">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quisquam
         veniam non facilis! Harum, animi. Nesciunt minus deserunt dolorum
         commodi. Illo pariatur delectus commodi officiis fuga perferendis fugit
@@ -25,7 +25,7 @@ const Homepage = () => {
         <a
           href="https://google.com"
           target="_blank"
-          className="dark:text-dark text-light capitalize"
+          className="capitalize dark:text-dark text-light"
         >
           Check out my resume!
         </a>

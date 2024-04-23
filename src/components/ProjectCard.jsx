@@ -10,7 +10,7 @@ const ProjectCard = (props) => {
       <img
         src={props.image}
         alt="project-image"
-        className="object-fill w-full h-44 shadow-md rounded-xl"
+        className="object-fill w-full shadow-md h-44 md:h-48 rounded-xl"
       />
       <div className="px-4 py-5 sm:p-5">
         <div className="flex items-center justify-between gap-x-4 text-xl sm:text-[1.375rem]">
@@ -29,7 +29,7 @@ const ProjectCard = (props) => {
             </a>
           </div>
         </div>
-        <p className="pt-3 pb-5 sm:pt-4 sm:pb-6 text-sm font-semibold dark:font-normal font-abeezee">
+        <p className="pt-3 pb-5 text-sm font-semibold sm:pt-4 sm:pb-6 dark:font-normal font-abeezee">
           {props.summary}
         </p>
         <div className="flex flex-wrap gap-2">

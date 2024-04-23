@@ -35,7 +35,7 @@ function App() {
     <Router>
       <DarkModeContext.Provider value={{ isDarkMode, setIsDarkMode }}>
         <div
-          className={`w-screen min-h-screen h-full p-5 sm:px-7 pb-4 font-wendy dark:bg-dark text-dark bg-light dark:text-light ${
+          className={`flex flex-col justify-between w-screen min-h-screen h-full p-5 sm:px-7 pb-4 font-wendy dark:bg-dark text-dark bg-light dark:text-light ${
             isSidebar ? "h-screen overflow-hidden" : ""
           }`}
         >
@@ -44,11 +44,10 @@ function App() {
             setIsSidebar={setIsSidebar}
             showSidebar={showSidebar}
             hideSidebar={hideSidebar}
-            // setPage={setPage}
           />
           {isSidebar && (
             <div
-              className="fixed inset-0 bg-black bg-opacity-80"
+              className="fixed inset-0 bg-black bg-opacity-80 md:hidden"
               onClick={hideSidebar}
             ></div>
           )}
