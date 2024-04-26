@@ -8,6 +8,8 @@ export default {
       xs: "500px",
       sm: "640px",
       md: "768px",
+      lg: "892px",
+      xl: "1024px",
     },
     extend: {
       fontFamily: {
