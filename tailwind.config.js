@@ -10,6 +10,8 @@ export default {
       md: "768px",
       lg: "892px",
       xl: "1024px",
+      "2xl": "1192px",
+      "3xl": "1480px",
     },
     extend: {
       fontFamily: {
