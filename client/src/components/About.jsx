@@ -88,7 +88,7 @@ const Aboutpage = () => {
   ];
 
   return (
-    <main className="flex flex-col gap-12 px-8 py-10 my-10 border-2 3xl:py-14 xl:gap-20 xl:px-16 2xl:gap-24 3xl:gap-32 2xl:px-24 3xl:px-32 lg:flex-row md:my-14 3xl:my-[4.5rem] rounded-2xl border-dark dark:border-light lg:items-center">
+    <main className="flex flex-col gap-12 px-8 py-10 my-10 border-2 xl:py-12 2xl:py-14 3xl:py-14 xl:gap-20 xl:px-16 2xl:gap-24 3xl:gap-32 2xl:px-24 3xl:px-32 lg:flex-row md:my-14 3xl:my-[4.5rem] rounded-2xl border-dark dark:border-light lg:items-center">
       <section className="text-sm font-semibold text-center lg:text-left sm:text-base 3xl:text-lg font-abeezee dark:font-normal lg:w-[47.5%]">
         <p>
           Hello! My name is Archit and I enjoy creating things that live on the
