@@ -29,7 +29,7 @@ const Contactpage = () => {
       // Check if the request was successful
       if (response.ok) {
         const data = await response.text();
-        console.log(data);
+        console.info(data);
         setSubmitted(true);
         setSuccess(true);
       } else {
@@ -47,7 +47,7 @@ const Contactpage = () => {
       setTimeout(() => {
         setSubmitted(false);
         setFormData({ email: "", message: "" });
-      }, 2500);
+      }, 3000);
     }
   };
 
@@ -99,7 +99,7 @@ const Contactpage = () => {
         />
       </form>
       {submitted && (
-        <p className="fixed transition-opacity -translate-x-1/2 text- top-4 md:top-6 left-1/2">
+        <div className="fixed transition-opacity -translate-x-1/2 text- top-4 md:top-6 left-1/2">
           {success ? (
             <p className="flex items-center px-4 py-1 text-green-900 bg-green-400 rounded-md gap-x-2">
               <FontAwesomeIcon icon={faCheckCircle} fontSize="20px" />
@@ -111,7 +111,7 @@ const Contactpage = () => {
               Error! Try Again.
             </p>
           )}
-        </p>
+        </div>
       )}
     </main>
   );
