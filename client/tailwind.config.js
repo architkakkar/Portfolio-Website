@@ -31,7 +31,8 @@ export default {
         12: "3rem",
       },
       backgroundImage: {
-        "hero-pattern-dark": "url('./src/assets/mobile/bg-pattern-1-dark.png')",
+        "hero-pattern-mobile": "url('./src/assets/mobile/bg-pattern-1-dark.png')",
+        "hero-pattern-desktop": "url('./src/assets/desktop/bg-pattern-1-dark.png')",
       },
       borderWidth: {
         1.5: "1.5px",
