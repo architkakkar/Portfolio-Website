@@ -1,37 +1,28 @@
 const express = require("express");
 const cors = require("cors");
-const sendEmail = require("./mailer");
+const admin = require("firebase-admin");
+const db = require("./firebaseAdmin");
 
 const app = express();
-
 const port = process.env.PORT || 3000;
 
-// Middleware to parse JSON bodies
 app.use(express.json());
-
-// Middleware to handle CORS
 app.use(cors());
 
-// Route to handle form submissions
 app.post("/submit-form", async (req, res) => {
   const { email, message } = req.body;
 
   try {
-    // Send confirmation email
-    await sendEmail(
-      "business.architkakkar@gmail.com", // to
-      "Contact Form - From Personal Website", // subject
-      `[${email}] has submitted the contact form.
-      \n\nMessage: "${message}".
-      \n\nPlease check and revert.
-      \n\nRegards,
-      \nBot` // message
-    );
+    const docRef = await db.collection("messages").add({
+      email: email,
+      message: message,
+      timestamp: admin.firestore.FieldValue.serverTimestamp(),
+    });
 
-    res.send("Form data received and email sent.");
+    res.status(200).send("Message sent.");
   } catch (error) {
-    console.error("Error processing form submission:", error);
-    res.status(500).send("Error processing form submission.");
+    console.error("Error adding document: ", error);
+    res.status(500).send("Error adding document");
   }
 });
 
