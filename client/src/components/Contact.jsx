@@ -18,7 +18,7 @@ const Contactpage = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:3000/submit-form", {
+      const response = await fetch(`${window.location.origin}/api/v1/contact`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
