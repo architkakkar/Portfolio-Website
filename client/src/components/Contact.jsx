@@ -18,13 +18,16 @@ const Contactpage = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch(`${window.location.origin}/api/v1/contact`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        `${VITE_REACT_APP_BACKEND_URL}/api/v1/contact`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       // Check if the request was successful
       if (response.ok) {
