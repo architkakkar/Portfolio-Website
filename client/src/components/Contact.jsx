@@ -19,7 +19,7 @@ const Contactpage = () => {
 
     try {
       const response = await fetch(
-        `${process.env.VITE_REACT_APP_BACKEND_URL}/api/v1/contact`,
+        `${import.meta.env.VITE_REACT_APP_BACKEND_URL}/api/v1/contact`,
         {
           method: "POST",
           headers: {
