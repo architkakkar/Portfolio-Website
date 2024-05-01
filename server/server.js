@@ -7,9 +7,15 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: ["https://architkakkar.vercel.app"],
+    methods: ["POST"],
+    credentials: true,
+  })
+);
 
-app.post("/submit-form", async (req, res) => {
+app.post("/api/v1/contact", async (req, res) => {
   const { email, message } = req.body;
 
   try {
