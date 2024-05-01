@@ -10,10 +10,14 @@ app.use(express.json());
 app.use(
   cors({
     origin: ["https://architkakkar.vercel.app"],
-    methods: ["POST"],
+    methods: ["POST", "GET"],
     credentials: true,
   })
 );
+
+app.get("/", (req, res) => {
+  res.send("Backend is up and running.");
+});
 
 app.post("/api/v1/contact", async (req, res) => {
   const { email, message } = req.body;
