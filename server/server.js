@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 app.use(
   cors({
-    origin: ["https://architkakkar.vercel.app"],
+    origin: ["https://architkakkar.vercel.app/contact"],
     methods: ["POST", "GET"],
     credentials: true,
   })
