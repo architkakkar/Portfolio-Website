@@ -23,7 +23,6 @@ const Contactpage = () => {
         {
           method: "POST",
           body: JSON.stringify(formData),
-          credentials: "include",
         }
       );
 
