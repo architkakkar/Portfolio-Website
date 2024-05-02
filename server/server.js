@@ -11,6 +11,8 @@ app.use(
   cors({
     origin: ["https://architkakkar.vercel.app", "https://localhost:5173"],
     methods: ["POST", "GET"],
+    credentials: true,
+    optionsSuccessStatus: 200,
   })
 );
 
