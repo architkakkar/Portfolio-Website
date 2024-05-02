@@ -22,9 +22,6 @@ const Contactpage = () => {
         `${import.meta.env.VITE_REACT_APP_BACKEND_URL}/api/v1/contact`,
         {
           method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
           body: JSON.stringify(formData),
           credentials: "include",
         }
