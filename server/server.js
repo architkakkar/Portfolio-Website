@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(
   cors({
     origin: ["https://architkakkar.vercel.app", "https://localhost:5173"],
-    methods: ["POST", "GET"],
+    methods: ["POST", "GET", "OPTIONS"],
     credentials: true,
     optionsSuccessStatus: 200,
   })
@@ -18,6 +18,10 @@ app.use(
 
 app.get("/", (req, res) => {
   res.send("Backend is up and running.");
+});
+
+app.get("/api/v1/contact", (req, res) => {
+  res.send("Backend is still running.");
 });
 
 app.post("/api/v1/contact", async (req, res) => {
