@@ -181,7 +181,7 @@ Project Link: [Archit Kakkar - Software Engineer](https://architkakkar.vercel.ap
 
 <!-- Product Screenshot -->
 
-[product-screenshot]: design/desktop-design-lightMode.png
+[product-screenshot]: design/desktop-design-darkMode.png
 
 <!-- Technology -->
 
