@@ -45,6 +45,7 @@ const Projects = () => {
         { name: "Vite", SvgComponent: ViteSvg },
       ],
     },
+    // TODO: Add more new projects.
   ];
 
   return (
