@@ -10,8 +10,8 @@ import {
   FirebaseSvg,
   TailwindCssSvg,
   NextSvg,
-  //AceternityUISvg,
-  //VercelSvg,
+  AceternityUISvg,
+  VercelSvg,
 } from "./SvgLogos";
 
 const Projects = () => {
@@ -46,8 +46,8 @@ const Projects = () => {
       technology: [
         { name: "NextJS", SvgComponent: NextSvg },
         { name: "TailwindCSS", SvgComponent: TailwindCssSvg },
-        //{ name: "Aceternity UI", SvgComponent: AceternityUISvg },
-        //{ name: "Vercel", SvgComponent: VercelSvg },
+        { name: "Aceternity UI", SvgComponent: AceternityUISvg },
+        { name: "Vercel", SvgComponent: VercelSvg },
       ],
     },
     {
