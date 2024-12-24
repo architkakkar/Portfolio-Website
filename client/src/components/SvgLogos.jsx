@@ -333,8 +333,7 @@ const AceternityUISvg = (props) => {
      fill={isDarkMode ? "black" : "beige"}
      version="1.1" 
      xmlns="http://www.w3.org/2000/svg" 
-     width="64" 
-     height="64"
+     viewBox="0 0 24 24"
    >
      <title>Aceternity UI</title>
      <path d="M0 0 C21.12 0 42.24 0 64 0 C64 21.12 64 42.24 64 64 C42.88 64 21.76 64 0 64 C0 42.88 0 21.76 0 0 Z " fill="#0A0A0A" transform="translate(0,0)"/>
