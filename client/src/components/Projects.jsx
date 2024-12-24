@@ -2,12 +2,16 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import MarkdownProjectImage from "../assets/markdown-notes-project.png";
 import MemeProjectImage from "../assets/meme-generator-project.png";
+import MusicSchoolProjectImage from "../assets/music-school-project.png";
 import {
   ReactSvg,
   CSS3Svg,
   ViteSvg,
   FirebaseSvg,
   TailwindCssSvg,
+  NextSvg,
+  //AceternityUISvg,
+  //VercelSvg,
 } from "./SvgLogos";
 
 const Projects = () => {
@@ -27,6 +31,23 @@ const Projects = () => {
         { name: "CSS3", SvgComponent: CSS3Svg },
         { name: "Vite", SvgComponent: ViteSvg },
         { name: "Firebase", SvgComponent: FirebaseSvg },
+      ],
+    },
+    {
+      title: "Music School",
+      image: MusicSchoolProjectImage,
+      isPrivate: false,
+      links: {
+        repo: "https://github.com/architkakkar/Music-School-App",
+        website: "https://architkakkar-music-school-app.vercel.app/",
+      },
+      summary:
+        "This project is a comprehensive educational platform designed to facilitate music learning for individuals of all ages and skill levels. It aims to bridge the gap between students and educators. This project primarily focuses on enhancing the user interface, thereby improving my expertise in NextJS and Aceternity UI",
+      technology: [
+        { name: "NextJS", SvgComponent: NextSvg },
+        { name: "TailwindCSS", SvgComponent: TailwindCssSvg },
+        //{ name: "Aceternity UI", SvgComponent: AceternityUISvg },
+        //{ name: "Vercel", SvgComponent: VercelSvg },
       ],
     },
     {
